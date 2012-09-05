@@ -1,0 +1,58 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Sammy</title>
+		
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		
+		<link rel="stylesheet" href="css/style.css">	
+		
+		<script src="/js/libs/modernizr/modernizr-2.0.6.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header role="banner">
+				<!--<nav role="navigation"></nav>-->
+				<h1><img src="/img/sammy-logo-header-large.png" alt="sammy.js quiz app"></h1>
+			</header>
+			
+			<div role="main" id="main">
+				<div id="app">
+					<div id="ready" class="box">
+						<h1>Famous Sammy's</h1>
+						<P>What famous Sammy are you? Take this quiz to find out!</p>
+						<p><a href="#/quiz">Ready?</a></p>
+					</div>
+					<div id="quiz" class="box">
+						<p>Which of the following best describes you:</p>
+						<form name="sammy-quiz" id="sammy-quiz" action="#/results" method="post">
+							<p><input type="radio" name="sammy-answer" id="ans-1" value="1"> <label for="ans-1">Special sauce, baby!</label></p>
+							<p><input type="radio" name="sammy-answer" id="ans-2" value="2"> <label for="ans-2">What have I got? No looks, no money, no education. Just talent.</label></p>
+							<p><input type="radio" name="sammy-answer" id="ans-3" value="3"> <label for="ans-3">I'm a slugger.</label></p>
+							<p><input type="radio" name="sammy-answer" id="ans-4" value="4"> <label for="ans-4">I can't drive 55!</label></p>
+							<input type="submit" value="What Sammy am I?" class="btn">
+						</form>
+					</div>
+					<div id="results" class="box">
+					</div>
+				</div>
+			</div>
+			
+			<footer role="contentinfo">
+			
+			</footer>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/js/libs/jquery/1.7.1/jquery.min.js"><\/script>')</script>
+		<script src="/js/jquery.ba-hashchange.min.js"></script>
+		<script src="/js/libs/sammy/0.7.1/sammy.js"></script>
+		<script src="/js/libs/sammy/sammy.template.js"></script>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
